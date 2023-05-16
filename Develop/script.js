@@ -42,10 +42,28 @@ function generatePassword() {
     container += symbols
   }
   console.log(container)
+  let result = ""
+  var containerlength = container.length
+  for (let i = 0; i < passwordLength; i++) {
+    const element = array[i];
+    
+  }
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
+// function makeid(length) {
+//     let result = '';
+//     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     const charactersLength = characters.length;
+//     let counter = 0;
+//     while (counter < length) {
+//       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//       counter += 1;
+//     }
+//     return result;
+// }
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
 // THEN I am presented with a series of prompts for password criteria
