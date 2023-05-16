@@ -29,7 +29,19 @@ function generatePassword() {
   var numbers = "1234567890"
   var symbols = "!@#$%^&*()"
   var container = ""
-  
+  if (lowerCase){
+    container += lower
+  }
+  if (upperCase){
+    container += upper
+  }
+  if (numeric){
+    container += numbers
+  }
+  if (specialCharacters){
+    container += symbols
+  }
+  console.log(container)
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
