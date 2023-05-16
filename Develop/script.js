@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Write password to the #password input  
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -16,10 +16,10 @@ function generatePassword() {
     alert("You must choose a password length of 8 to 128 characters")
     return "Please try again"
   }
-  var lowerCase = prompt("Would you like lowercase characters")
-  var upperCase = prompt("Would you like uppercase characters")
-  var numeric = prompt("Would you like numeric characters")
-  var specialCharacters = prompt("Would you like special characters")
+  var lowerCase = confirm("Would you like lowercase characters")
+  var upperCase = confirm("Would you like uppercase characters")
+  var numeric = confirm("Would you like numeric characters")
+  var specialCharacters = confirm("Would you like special characters")
   console.log(lowerCase, upperCase, numeric, specialCharacters)
   if (lowerCase === false, upperCase === false, numeric === false, specialCharacters === false) {
     alert("You need to add uppercase, lowercase, numbers, and special characters")
