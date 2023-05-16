@@ -24,8 +24,12 @@ function generatePassword() {
     alert("You need to add uppercase, lowercase, numbers, and special characters")
     return "Please try again"
   }
-
-}
+  var lower = "abcdefghijklmnopqrstuvwxyz"
+  var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var numbers = "1234567890"
+  var symbols = "!@#$%^&*()"
+  var container = ""
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
