@@ -12,7 +12,7 @@ function writePassword() {
 function generatePassword() {
   var passwordLength = prompt("How many charachters would you like your password. Pick between 8 and 128.")
   console.log(passwordLength)
-  if (passwordLength < 8 || > 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     return "Please try again"
   }
   var lowerCase = prompt("Would you like lowercase characters")
@@ -45,11 +45,10 @@ function generatePassword() {
   let result = ""
   var containerlength = container.length
   for (let i = 0; i < passwordLength; i++) {
-    const element = array[i];
-    
+    result += container.charAt(Math.floor(Math.random() * containerlength))
   }
-
-
+  console.log(result)
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
