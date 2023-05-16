@@ -22,7 +22,7 @@ function generatePassword() {
   var specialCharacters = confirm ("Would you like special characters")
   console.log(lowerCase, upperCase, numeric, specialCharacters)
   if (lowerCase === false && upperCase === false && numeric === false && specialCharacters === false) {
-    alert("You need to add uppercase, lowercase, numbers, and special characters")
+    alert("You need to add uppercase, lowercase, numbers, or special characters")
     return "Please try again"
   }
   var lower = "abcdefghijklmnopqrstuvwxyz"
@@ -30,16 +30,16 @@ function generatePassword() {
   var numbers = "1234567890"
   var symbols = "!@#$%^&*()"
   var container = ""
-  if (lowerCase){
+  if (lowerCase) {
     container += lower
   }
-  if (upperCase){
+  if (upperCase) {
     container += upper
   }
-  if (numeric){
+  if (numeric) {
     container += numbers
   }
-  if (specialCharacters){
+  if (specialCharacters) {
     container += symbols
   }
   console.log(container)
@@ -47,8 +47,10 @@ function generatePassword() {
   var containerlength = container.length
   for (let i = 0; i < passwordLength; i++) {
     result += container.charAt(Math.floor(Math.random() * containerlength))
+
   }
   console.log(result)
+  return result
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
