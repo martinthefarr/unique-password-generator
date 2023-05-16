@@ -12,11 +12,19 @@ function writePassword() {
 function generatePassword() {
   var passwordLength = prompt("How many charachters would you like your password. Pick between 8 and 128.")
   console.log(passwordLength)
+  if (passwordLength < 8 || > 128) {
+    return "Please try again"
+  }
   var lowerCase = prompt("Would you like lowercase characters")
   var upperCase = prompt("Would you like uppercase characters")
   var numeric = prompt("Would you like numeric characters")
   var specialCharacters = prompt("Would you like special characters")
   console.log(lowerCase, upperCase, numeric, specialCharacters)
+  if (lowerCase === false, upperCase === false, numeric === false, specialCharacters === false) {
+    alert("You need to add uppercase, lowercase, numbers, and special characters")
+    return "Please try again"
+  }
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
