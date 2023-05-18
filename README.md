@@ -1,9 +1,11 @@
 # unique-password-generator
 
-##Description
+## Description:
+
 This is a password generator. This program will ask a series of qeustions to generate a random password for the user. 
 
-###Process
+### Process:
+
 Once "Generate Password is clicked the user will be prompted to awnser the following questions.
 
 How long would you like your password? The range is anywhere from 8 characters to 128.
