@@ -19,3 +19,5 @@ Would you like to use numeric? 0 - 9
 Would you like to use special characters? !@#$%^&*()
 
 ![Webpage](images/password-web-page.png)
+
+Once these these questions are awnsered, the users random password will be generated in the box that has a dashed-line border. 
