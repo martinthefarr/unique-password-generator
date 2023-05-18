@@ -16,4 +16,4 @@ Would you like to use numeric? 0 - 9
 
 Would you like to use special characters? !@#$%^&*()
 
-![Webpage](unique-password-generator-images-Password-Generator.png)
+![Webpage](Password-Generator.png)
